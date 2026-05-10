@@ -1,0 +1,32 @@
+{
+  "dns": {
+    "timeout": 5,
+    "retries": 2,
+    "rate_limit_delay": 0.1,
+    "nameservers": [
+      "8.8.8.8",
+      "8.8.4.4",
+      "1.1.1.1",
+      "1.0.0.1"
+    ]
+  },
+  "whois": {
+    "timeout": 10
+  },
+  "geoip": {
+    "provider": "ipinfo.io",
+    "api_token_env": "IPINFO_TOKEN",
+    "note": "Get free token at https://ipinfo.io - 50k requests/month"
+  },
+  "output": {
+    "format": "json",
+    "colorize_terminal": true,
+    "indent": 2
+  },
+  "api_keys": {
+    "ipinfo": "SET VIA ENVIRONMENT VARIABLE IPINFO_TOKEN",
+    "shodan": null,
+    "censys_id": null,
+    "censys_secret": null
+  }
+}
