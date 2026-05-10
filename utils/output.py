@@ -8,9 +8,9 @@ init(autoreset=True)
 
 def print_header(text: str) -> None:
     """Print a colored section header."""
-    print(f"\n{Fore.CYAN}{'='*60}")
+    print(f"\n{Fore.CYAN}{'=' * 60}")
     print(f"{Fore.CYAN}{text:^60}")
-    print(f"{Fore.CYAN}{'='*60}{Style.RESET_ALL}\n")
+    print(f"{Fore.CYAN}{'=' * 60}{Style.RESET_ALL}\n")
 
 
 def print_success(text: str) -> None:
@@ -48,18 +48,20 @@ def print_table(headers: list, rows: list) -> None:
     if not rows:
         print_warning("No data to display")
         return
-    
+
     col_widths = [len(str(h)) for h in headers]
     for row in rows:
         for i, cell in enumerate(row):
             col_widths[i] = max(col_widths[i], len(str(cell)))
-    
+
     # Print header
-    header_line = " | ".join(f"{h:<{col_widths[i]}}" for i, h in enumerate(headers))
+    header_line = " | ".join(
+        f"{h:<{col_widths[i]}}" for i, h in enumerate(headers))
     print(f"{Fore.CYAN}{header_line}{Style.RESET_ALL}")
     print("-" * len(header_line))
-    
+
     # Print rows
     for row in rows:
-        row_line = " | ".join(f"{str(cell):<{col_widths[i]}}" for i, cell in enumerate(row))
+        row_line = " | ".join(
+            f"{str(cell):<{col_widths[i]}}" for i, cell in enumerate(row))
         print(row_line)

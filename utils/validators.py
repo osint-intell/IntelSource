@@ -36,7 +36,7 @@ def classify_target(target: str) -> Tuple[str, bool]:
     Returns (target_type, is_valid)
     """
     target = target.strip()
-    
+
     if is_valid_ip(target):
         return ('ip', True)
     elif is_valid_email(target):
