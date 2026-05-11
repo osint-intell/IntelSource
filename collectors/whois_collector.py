@@ -1,6 +1,6 @@
 """WHOIS data collector for domains and IP addresses."""
 import whois
-from typing import Dict, Any, Optional
+from typing import Dict, Any
 from utils.logger import setup_logger
 
 logger = setup_logger(__name__)
