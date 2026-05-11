@@ -517,7 +517,7 @@ DNS_TIMEOUT=10
 **IntelSource** is maintained by the **OSINT Intelligence** community as part of the initiative to provide open-source security tools.
 
 - 🌐 Website: [osintintelligence.xyz](https://osintintelligence.xyz)
-- 📊 GitHub Org: [OsintIntelligence](https://github.com/OsintIntelligence)
+- 📊 GitHub Org: [OsintIntelligence](https://github.com/osint-intell)
 - 📧 Contact: [Open an issue](https://github.com/OsintIntelligence/IntelSource/issues)
 
 ---
