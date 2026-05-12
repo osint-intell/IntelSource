@@ -75,8 +75,7 @@ class GeoIPCollector:
 
         except json.JSONDecodeError as e:
             logger.error(
-                f"Failed to parse GeoIP response for {ip_address}: {
-                    str(e)}")
+                f"Failed to parse GeoIP response for {ip_address}: {str(e)}")
             return {
                 'ip_address': ip_address,
                 'status': 'failed',

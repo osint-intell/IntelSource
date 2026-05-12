@@ -123,8 +123,7 @@ class DNSCollector:
 
         except Exception as e:
             logger.error(
-                f"Reverse DNS lookup failed for {ip_address}: {
-                    str(e)}")
+                f"Reverse DNS lookup failed for {ip_address}: {str(e)}")
             return {
                 'ip_address': ip_address,
                 'hostnames': [],
