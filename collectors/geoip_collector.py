@@ -36,10 +36,7 @@ class GeoIPCollector:
             # Handle error responses
             if 'error' in data:
                 logger.warning(
-                    f"ipinfo.io error for {ip_address}: {
-                        data.get(
-                            'error', {}).get(
-                            'message', 'Unknown')}")
+                    f"ipinfo.io error for {ip_address}: {data.get('error', {}).get('message', 'Unknown')}")
                 return {
                     'ip_address': ip_address,
                     'status': 'failed',

@@ -87,8 +87,7 @@ class DNSCollector:
 
         except Exception as e:
             logger.error(
-                f"DNS query failed for {domain} ({record_type}): {
-                    str(e)}")
+                f"DNS query failed for {domain} ({record_type}): {str(e)}")
             return {
                 'type': record_type,
                 'records': [],

@@ -73,6 +73,5 @@ class EmailValidator:
 
         except Exception as e:
             logger.error(
-                f"Failed to retrieve MX records for {domain}: {
-                    str(e)}")
+                f"Failed to retrieve MX records for {domain}: {str(e)}")
             return []
